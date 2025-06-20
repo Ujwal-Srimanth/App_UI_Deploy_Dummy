@@ -97,7 +97,6 @@ const StudentPage = () => {
           />
 
           {nameError && <p style={{ color: 'red', fontSize: '13px', marginTop: '6px' }}>{nameError}</p>}
-
           <button
             onClick={handleNameSubmit}
             disabled={!nameInput.trim()}
@@ -208,6 +207,7 @@ const inputStyle = {
   border: '1px solid #ccc',
   marginBottom: '16px',
   marginTop: '8px',
+  boxSizing: 'border-box'
 };
 
 const continueButton = {
